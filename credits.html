@@ -23,6 +23,7 @@
             height: 150px;
             margin: 10px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             border-radius: 5px;
@@ -42,13 +43,57 @@
             text-align: center;
             margin-top: 20px;
         }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #464646;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 80%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #2f2f2f transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .credit-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
 <!-- NAVIGATION MENU -->
 <nav id="desktop-nav">
-    <div class="logo"><a href="index.html" target="_blank">Fantomubijon</a></div>
+    <div class="logo">
+        <a href="index.html" target="_blank">Fantomubijon</a>
+    </div>
     <div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -61,7 +106,7 @@
     </div>
 </nav>
 
-<!-- FOR RESPONSIVE HAMBUGER MENU -->
+<!-- FOR RESPONSIVE HAMBURGER MENU -->
 <nav id="hamburger-nav">
     <div class="logo">Fantomubijon</div>
     <div class="hamburger-menu">
@@ -84,60 +129,69 @@
 <p class="section__text__p1">A Special Thanks to These Companies</p>
 <h1 class="title">Credits</h1>
 <div class="credits">
-    <div class="credit-item">
+    <div class="credit-item tooltip">
         <a href="https://fonts.google.com/" target="_blank">
             <img src="assets/googlefonts.png" alt="Google Fonts">
         </a>
+        <span class="tooltiptext">Font Source: Poppins</span>
     </div>
-    <div class="credit-item">
+    <div class="credit-item tooltip">
         <a href="https://boxicons.com/" target="_blank">
             <img src="assets/boxicons.png" alt="Boxicons">
         </a>
+        <span class="tooltiptext">Source of Icons and Assets</span>
     </div>
-    <div class="credit-item">
+    <div class="credit-item tooltip">
         <a href="https://infinityfree.net/" target="_blank">
             <img src="assets/domain.png" alt="InfinityFree" height="100" width="100">
         </a>
+        <span class="tooltiptext">Website Domain: InfinityFree</span>
     </div>
-    <div class="credit-item">
+    <div class="credit-item tooltip">
         <a href="https://www.onlinegdb.com/" target="_blank">
             <img src="assets/onlinrgdb.png" alt="OnlineGDB" height="100" width="100">
         </a>
+        <span class="tooltiptext">Code Embedding: OnlineGDB</span>
     </div>
-    <div class="credit-item">
+    <div class="credit-item tooltip">
         <a href="https://www.w3schools.com/" target="_blank">
             <img src="assets/W3Schools_logo.png" alt="W3S" height="100" width="100">
         </a>
+        <span class="tooltiptext">Additional Resource: W3Schools</span>
     </div>
 </div>
 
 <div class="credits">
-    <div class="credit-item">
+    <div class="credit-item tooltip">
         <a href="https://www.monstaftp.com/" target="_blank">
             <img src="assets/monsta.png" alt="monsta" height="100" width="100">
         </a>
+        <span class="tooltiptext">File Upload: MonstaFTP</span>
     </div>
-    <div class="credit-item">
+    <div class="credit-item tooltip">
         <a href="https://youtu.be/ldwlOzRvYOU" target="_blank">
             <img src="assets/Youtube.webp" alt="YouTube">
         </a>
+        <span class="tooltiptext">YouTube Tutorials: @howtobecomeadeveloper</span>
     </div>
-    <div class="credit-item">
+    <div class="credit-item tooltip">
         <a href="https://www.notion.so/" target="_blank">
             <img src="assets/notion.png" alt="Notion">
         </a>
+        <span class="tooltiptext">Inspiration: Notion (Black and White Theme)</span>
     </div>
-    <div class="credit-item">
+    <div class="credit-item tooltip">
         <a href="https://www.canva.com/" target="_blank">
             <img src="assets/canva.png" alt="Canva">
         </a>
+        <span class="tooltiptext">Asset Creation: Canva</span>
     </div>
-    <div class="credit-item">
-        <a href="https://www.canva.com/" target="_blank">
+    <div class="credit-item tooltip">
+        <a href="https://www.favicon.io/" target="_blank">
             <img src="assets/favico.png" alt="Favicon">
         </a>
+        <span class="tooltiptext">Favicon: Favicon Monkey</span>
     </div>
-    <!-- Add more credit items here -->
 </div>
 
 <footer>
