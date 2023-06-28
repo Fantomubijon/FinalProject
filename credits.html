@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+        .credits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .credit-item {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .credit-item img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .section__text__p1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<!-- NAVIGATION MENU -->
+<nav id="desktop-nav">
+    <div class="logo"><a href="index.html" target="_blank">Fantomubijon</a></div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="">Credits</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- FOR RESPONSIVE HAMBUGER MENU -->
+<nav id="hamburger-nav">
+    <div class="logo">Fantomubijon</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+            <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="contacts.html" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="" onclick="toggleMenu()">Credits</a></li>
+        </div>
+    </div>
+</nav>
+
+<p class="section__text__p1">A Special Thanks to These Companies</p>
+<h1 class="title">Credits</h1>
+<div class="credits">
+    <div class="credit-item">
+        <a href="https://fonts.google.com/" target="_blank">
+            <img src="assets/googlefonts.png" alt="Google Fonts">
+        </a>
+    </div>
+    <div class="credit-item">
+        <a href="https://boxicons.com/" target="_blank">
+            <img src="assets/boxicons.png" alt="Boxicons">
+        </a>
+    </div>
+    <div class="credit-item">
+        <a href="https://infinityfree.net/" target="_blank">
+            <img src="assets/domain.png" alt="InfinityFree" height="100" width="100">
+        </a>
+    </div>
+    <div class="credit-item">
+        <a href="https://www.onlinegdb.com/" target="_blank">
+            <img src="assets/onlinrgdb.png" alt="OnlineGDB" height="100" width="100">
+        </a>
+    </div>
+    <div class="credit-item">
+        <a href="https://www.w3schools.com/" target="_blank">
+            <img src="assets/W3Schools_logo.png" alt="W3S" height="100" width="100">
+        </a>
+    </div>
+</div>
+
+<div class="credits">
+    <div class="credit-item">
+        <a href="https://www.monstaftp.com/" target="_blank">
+            <img src="assets/monsta.png" alt="monsta" height="100" width="100">
+        </a>
+    </div>
+    <div class="credit-item">
+        <a href="https://youtu.be/ldwlOzRvYOU" target="_blank">
+            <img src="assets/Youtube.webp" alt="YouTube">
+        </a>
+    </div>
+    <div class="credit-item">
+        <a href="https://www.notion.so/" target="_blank">
+            <img src="assets/notion.png" alt="Notion">
+        </a>
+    </div>
+    <div class="credit-item">
+        <a href="https://www.canva.com/" target="_blank">
+            <img src="assets/canva.png" alt="Canva">
+        </a>
+    </div>
+    <!-- Add more credit items here -->
+</div>
+
+<footer>
+    <p>© 2023 For Educational Purpose Only.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

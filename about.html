@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+
+<!-- NAVIGATION MENU -->
+<nav id="desktop-nav">
+  <div class="logo"><a href="index.html">Fantomubijon</a> </div>
+  <div class="nav">
+  <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+      <li><a href="credits.html">Credits</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- FOR RESPONSIVE HAMBUGER MENU -->
+<nav id="hamburger-nav">
+  <div class="logo">Fantomubijon</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="" onclick="toggleMenu()">About</a></li>
+        <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+        <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="contacts.html" onclick="toggleMenu()">Contact</a></li>
+        <li><a href="credits.html" onclick="toggleMenu()">Credits</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img
+              src="assets/about-pic.jpeg"
+              alt="Profile picture"
+              class="about-pic"
+      />
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <a href="https://www.feutech.edu.ph/" target="_blank">
+            <img
+                    src="./assets/experience.png"
+                    alt="Experience icon"
+                    class="icon"
+            />
+            <h3>Experience</h3>
+            <p>1st Year BSIT Student</p>
+          </a>
+        </div>
+        <div class="details-container">
+          <a href="https://www.feutech.edu.ph/" target="_blank">
+            <img
+                    src="./assets/education.png"
+                    alt="Education icon"
+                    class="icon"
+            />
+            <h3>Education</h3>
+            <p>Currently pursuing Bachelors of Science in Information Technology (BSIT)</p>
+          </a>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+          I'm Carl Allen Torno, a 19-year-old BSIT student from FEU Institute of Technology specializing in Web and Mobile Applications.
+          My passion is to become a Full Stack Developer, building applications that can make a difference in people's lives.
+          As Walt Disney said, "Keep moving forward," and that's the motto I live by, constantly pushing myself to learn and grow in my field.
+        </p>
+        <br>
+        <p>
+          Regarding programming, Java, Python, C++, and C# are my jam, but Java is my absolute favorite.
+          I love the challenge of finding solutions to complex problems and bringing my ideas to life through code.
+          Aside from programming, I'm also a big fan of anime and sitcoms.
+          It's my way of escaping reality and immersing myself in different worlds.
+        </p>
+        <br>
+        <p>
+          Even though I'm introverted to strangers, I'm always open to meeting new people and expanding my horizons.
+          You can call me by my surname, Torno, or Torns. Let's connect and build something unique together!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2023 For Educational Purpose Only.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
