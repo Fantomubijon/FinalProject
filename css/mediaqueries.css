@@ -22,6 +22,7 @@
     width: 75%;
   }
 
+  #projects,
   #gallery{
     width: auto;
     height: auto;
@@ -58,7 +59,7 @@
   .btn-color-2{
     width: 75%;
   }
-
+  #projects,
   #gallery{
     height: auto;
     width: auto;
@@ -83,6 +84,12 @@
     margin: 0 auto 2rem;
   }
 
+  .contact-info-upper-container,
+  .contact-info-lower-container{
+    width: auto;
+    height: auto;
+  }
+
   .about-containers {
     margin-top: 0;
   }
@@ -96,10 +103,74 @@
     height: fit-content;
   }
 }
+
+@media screen and (max-width: 950px) {
+
+  .about-containers,
+  .contact-info-upper-container,
+  .contact-info-lower-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .contact-info-upper-container,
+  .contact-info-lower-container{
+    width: 627px;
+    height: auto;
+  }
+
+  .contact-info-container{
+    margin: 10px;
+  }
+
+}
+
+
+@media screen and (max-width: 681px) {
+
+  .about-containers,
+  .contact-info-upper-container,
+  .contact-info-lower-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .contact-info-upper-container,
+  .contact-info-lower-container{
+    width: 500px;
+    height: auto;
+  }
+
+  .contact-info-container{
+    margin: 10px;
+  }
+
+}
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
     height: 40vh;
+  }
+
+  .contact-info-upper-container,
+  .contact-info-lower-container{
+    width: auto;
+    height: auto;
   }
 
   .project-img{
@@ -112,6 +183,7 @@
     width: 75%;
   }
 
+  #projects,
   #gallery{
     height: auto;
   }
@@ -189,6 +261,11 @@
   .btn-color-1,
   .btn-color-2{
     width: 100%;
+  }
+
+  #contact{
+    margin-top: 60px;
+    height: auto;
   }
 }
 
