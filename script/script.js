@@ -1,5 +1,4 @@
-// Hamburger Menu
-// Hamburger Menu
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
@@ -11,7 +10,7 @@ function toggleMenu() {
 const words = [
   'Programmer',
   'Web and Mobile Student',
-  'BSIT',
+  'Bachelor of Science in Information Technology',
   'FEU TECH Student'
 ];
 

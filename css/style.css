@@ -1,4 +1,3 @@
-/* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -58,11 +57,11 @@ nav {
 }
 
 .logo a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit text color */
-  display: inline-block; /* Ensure the link takes the width of the container */
-  width: 100%; /* Make the link fill the container horizontally */
-  height: 100%; /* Make the link fill the container vertically */
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .logo {
@@ -330,11 +329,11 @@ section {
 }
 
 .details-container a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit text color */
-  display: inline-block; /* Ensure the link takes the width of the container */
-  width: 100%; /* Make the link fill the container horizontally */
-  height: 100%; /* Make the link fill the container vertically */
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -450,11 +449,11 @@ article .icon {
 }
 
 .contact-info-container a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit text color */
-  display: inline-block; /* Ensure the link takes the width of the container */
-  width: 100%; /* Make the link fill the container horizontally */
-  height: 100%; /* Make the link fill the container vertically */
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-icon {
@@ -506,4 +505,70 @@ footer {
 .footer-info {
   font-size: 14px;
   opacity: 0.8;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.about-containers,
+.contact-info-upper-container,
+.contact-info-lower-container,
+.btn-container {
+  flex-wrap: wrap;
+}
+.contact-info-container {
+  margin: 0;
+}
+.contact-info-container p,
+.nav-links li a {
+  font-size: 1rem;
+}
+
+.contact-info-upper-container,
+.contact-info-lower-container{
+  width: 627px;
+  height: auto;
+}
+
+.contact-info-container{
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  flex: 1;
+  padding-top: 45px;
+  width: 700px;
+}
+
+.right {
+  flex: 1;
+  padding: 20px;
 }

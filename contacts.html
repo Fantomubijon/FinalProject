@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacts</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/mediaqueries.css" />
+  <link rel="stylesheet" text="text/css" href="css/style.css" />
+  <link rel="stylesheet" text="text/css" href="css/mediaqueries.css" />
 </head>
 
 <body>
@@ -49,51 +49,97 @@
 </nav>
 
 <section id="contact">
-  <p class="section__text__p1">Get in Touch</p>
-  <h1 class="title">Contact Me</h1>
-  <div class="contact-info-upper-container">
-    <div class="contact-info-container">
-      <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-      <p><a href="mailto:ctorno30@gmail.com" target="_blank">ctorno30@gmail.com</a></p>
-    </div>
-    <div class="contact-info-container">
-      <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-      <p><a href="https://www.linkedin.com/in/carl-allen-torno-69aa76269" target="_blank">LinkedIn</a></p>
-    </div>
-    <div class="contact-info-container">
-      <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
-      <p><a href="https://github.com/Fantomubijon" target="_blank">GitHub</a></p>
-    </div>
-    <div class="contact-info-container">
-      <img src="./assets/facebook.png" alt="Facebook icon" class="icon contact-icon" />
-      <p><a href="https://www.facebook.com/fantomubijon" target="_blank">Facebook</a></p>
-    </div>
-    <div class="contact-info-container">
-      <img src="./assets/twitter.png" alt="Twitter icon" class="icon contact-icon" />
-      <p><a href="https://twitter.com/Fantomubijon" target="_blank">Twitter</a></p>
+  <div class="container">
+    <div class="left">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:ctorno30@gmail.com" target="_blank">ctorno30@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/carl-allen-torno-69aa76269" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+          <p><a href="https://github.com/Fantomubijon" target="_blank">GitHub</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/facebook.png" alt="Facebook icon" class="icon contact-icon" />
+          <p><a href="https://www.facebook.com/fantomubijon" target="_blank">Facebook</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/twitter.png" alt="Twitter icon" class="icon contact-icon" />
+          <p><a href="https://twitter.com/Fantomubijon" target="_blank">Twitter</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img src="./assets/instagram.png" alt="Instagram icon" class="icon contact-icon" />
+          <p><a href="https://www.instagram.com/notfantomubijon/" target="_blank">Instagram</a></p>
+        </div>
+      </div>
+      <div class="contact-info-lower-container">
+        <div class="contact-info-container">
+          <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon" />
+          <p><a href="tel:09956481031">0995 648 1031</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/address.png" alt="Address icon" class="icon contact-icon" />
+          <p><a href="https://goo.gl/maps/2GL5LUJwi8jAfhbG9" target="_blank">829 Bohol Street Sampaloc Manila</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/telephone.png" alt="Telephone icon" class="icon contact-icon" />
+          <p><a href="tel:0285642747">02 85642747</a></p>
+        </div>
+      </div>
     </div>
 
-    <div class="contact-info-container">
-      <img src="./assets/instagram.png" alt="Instagram icon" class="icon contact-icon" />
-      <p><a href="https://www.instagram.com/notfantomubijon/" target="_blank">Instagram</a></p>
+
+    <div class="right">
+      <!-- THIS ONE SUPPOSE ON THE RIGHT SIDE-->
+      <form>
+        <div class="form-group">
+          <label for="first-name">First name*</label>
+          <input type="text" id="first-name" name="first-name">
+          <div id="first-name-error" class="error-message"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last name*</label>
+          <input type="text" id="last-name" name="last-name">
+          <div id="last-name-error" class="error-message"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="work-email">Work email*</label>
+          <input type="email" id="work-email" name="work-email">
+          <div id="work-email-error" class="error-message"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="company-name">Company name*</label>
+          <input type="text" id="company-name" name="company-name">
+          <div id="company-name-error" class="error-message"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country or region*</label>
+          <input type="text" id="country" name="country">
+          <div id="country-error" class="error-message"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="anything-else">Message?</label>
+          <textarea id="anything-else" name="anything-else"></textarea>
+        </div>
+
+        <p>Fields marked with an asterisk (*) are required.</p>
+        <input type="submit" value="Submit" onclick="return validateForm()" style="border-radius: 25px">
+      </form>
     </div>
   </div>
-  <div class="contact-info-lower-container">
-    <div class="contact-info-container">
-      <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon" />
-      <p><a href="tel:09956481031">0995 648 1031</a></p>
-    </div>
-    <div class="contact-info-container">
-      <img src="./assets/address.png" alt="Address icon" class="icon contact-icon" />
-      <p><a href="https://goo.gl/maps/2GL5LUJwi8jAfhbG9" target="_blank">829 Bohol Street Sampaloc Manila</a></p>
-    </div>
-    <div class="contact-info-container">
-      <img src="./assets/telephone.png" alt="Telephone icon" class="icon contact-icon" />
-      <p><a href="tel:0285642747">02 85642747</a></p>
-    </div>
-  </div>
-
-
 </section>
 
 <footer>
