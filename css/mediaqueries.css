@@ -331,3 +331,9 @@
     height: 163px;
   }
 }
+
+@media screen and (max-width: 473px) {
+  .contact-info-upper-container{
+    height: 203px;
+  }
+}

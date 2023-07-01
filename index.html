@@ -10,6 +10,50 @@
   <link rel="stylesheet" text="text/css" href="css/style.css" />
   <link rel="stylesheet" text="text/css" href="css/mediaqueries.css" />
 
+  <style>
+    /* Add a CSS transition to create a pop effect */
+    #myImage {
+      transition: transform 0.5s ease-in-out;
+    }
+
+    /* Add a class to apply the pop effect */
+    .pop {
+      transform: scale(1.1);
+    }
+  </style>
+
+  <script>
+    // Define an array of image URLs
+    var imageUrls = [
+      'assets/profile-pic.png',
+      'assets/profile/1.png',
+      'assets/profile/2.png',
+      'assets/profile/3.png',
+      'assets/profile/4.png',
+      'assets/profile/5.png',
+      'assets/profile/6.png',
+      'assets/profile/7.png',
+    ];
+
+    // Function to change the image
+    function changeImage() {
+      var img = document.getElementById('myImage');
+      var randomIndex = Math.floor(Math.random() * imageUrls.length);
+      img.src = imageUrls[randomIndex];
+
+      // Apply the "pop" class to trigger the pop effect
+      img.classList.add('pop');
+
+      // Remove the "pop" class after a short delay
+      setTimeout(function() {
+        img.classList.remove('pop');
+      }, 300);
+    }
+
+    // Call the changeImage function every 0.5 seconds (500 milliseconds)
+    setInterval(changeImage, 500);
+  </script>
+
 </head>
 
 <body>
@@ -56,7 +100,7 @@
 <!-- HOME SECTION -->
 <section id="profile">
   <div class="section__pic-container">
-    <img src="./assets/profile-pic.png" alt="My Profile Pic" />
+    <img id="myImage" src="./assets/profile-pic.png" alt="My Profile Pic">
   </div>
   <div class="section__text">
     <p class="section__text__p1">Hello, I'm</p>
